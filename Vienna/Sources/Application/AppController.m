@@ -1791,8 +1791,6 @@ withReplyEvent:(NSAppleEventDescriptor *)replyEvent
 		case 'Y':
 			[self viewArticlesTab:self];
 			return YES;
-
-		
 		case 's':
 		case 'S':
 			[self skipFolder:self];
