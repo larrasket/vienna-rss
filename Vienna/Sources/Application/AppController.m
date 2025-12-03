@@ -1728,7 +1728,8 @@ withReplyEvent:(NSAppleEventDescriptor *)replyEvent
     }
     unichar keyChar = [event.characters characterAtIndex:0];
     NSEventModifierFlags flags = event.modifierFlags;
-	switch (keyChar) {
+
+    	switch (keyChar) {
 		case NSLeftArrowFunctionKey:
             if (flags & (NSEventModifierFlagCommand | NSEventModifierFlagOption)) {
 				return NO;
@@ -1790,7 +1791,8 @@ withReplyEvent:(NSAppleEventDescriptor *)replyEvent
 		case 'Y':
 			[self viewArticlesTab:self];
 			return YES;
-			
+
+		
 		case 's':
 		case 'S':
 			[self skipFolder:self];
@@ -2277,6 +2279,14 @@ withReplyEvent:(NSAppleEventDescriptor *)replyEvent
 -(IBAction)closeAllTabs:(id)sender
 {
     [self.browser closeAllTabs];
+}
+
+/* reopenClosedTab
+ * Reopens the most recently closed tab (cmd+shift+t).
+ */
+-(IBAction)reopenClosedTab:(id)sender
+{
+    [self.browser reopenLastClosedTab];
 }
 
 /* closeTab

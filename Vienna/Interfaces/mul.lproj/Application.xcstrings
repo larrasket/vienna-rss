@@ -15255,6 +15255,18 @@
         }
       }
     },
+    "9999.title" : {
+      "comment" : "Class = \"NSMenuItem\"; title = \"Reopen Closed Tab\"; ObjectID = \"9999\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Reopen Closed Tab"
+          }
+        }
+      }
+    },
     "bd7-qY-ofB.title" : {
       "comment" : "Class = \"NSMenuItem\"; title = \"Text Replacement\"; ObjectID = \"bd7-qY-ofB\";",
       "extractionState" : "extracted_with_value",
