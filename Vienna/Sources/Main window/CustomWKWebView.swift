@@ -459,7 +459,6 @@ class CustomWKWebViewContextMenuListener: NSObject, WKScriptMessageHandler {
     }
 }
 
-
 class CustomWKWebViewErrorListener: NSObject, WKScriptMessageHandler {
 
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
